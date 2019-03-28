@@ -18,7 +18,7 @@ function mostrarStock(){
     if(piedra == 0){
         var mensaje= " no hay piedra ";
     }
-    else if(piedra < 30){
+    else if(piedra <= 30){
         var mensaje=" hay poca piedra ";
     }
     else{
