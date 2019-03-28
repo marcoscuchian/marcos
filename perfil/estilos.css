@@ -1,0 +1,75 @@
+*{
+    margin:0px;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body{
+    background: rgb(88, 194, 162);
+
+}
+#presentacion{
+   
+    margin:auto;
+    width: 1000px;
+}
+
+nav{
+    
+    height: 60px;
+}
+
+nav h1 {
+    float: left;
+    line-height: 60px;
+    color:rgb(255, 255, 255)
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    
+    height:60px;
+    display:inline-block;
+    padding: 10px;
+    line-height: 40px;
+    vertical-align: middle;
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+}
+
+#tarjeta{
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.336);
+}
+
+.informacion{
+    float:right;
+    width:calc(100% - 400px);
+}
+.informacion ul{
+    list-style: none;
+    padding: 10px;
+}
+.informacion ul li{
+    padding: 5px;
+}
+
+.instagram{
+    font-size: 25px;
+    margin-left:50%; 
+    display: inline-block;
+    width:25px;
+    height:25px;
+    color: blue;
+}

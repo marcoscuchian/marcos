@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(161, 163, 165);
+    padding: 0%;
+    margin:0;
+
+}
+
+#semaforo{
+    height: 600px;
+    width: 300px;
+    background: black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+
+}
+
+
+.luz{
+    height: 150px;
+    width: 150px;
+    background: gray;
+    border-radius: 50%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:20px;
+
+}
+
+.rojo{
+    background: red;
+
+}
+.verde{
+    background: green;    
+}
+
+.amarillo{
+    background: yellow;
+    
+}
