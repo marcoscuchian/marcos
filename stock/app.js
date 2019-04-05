@@ -5,7 +5,7 @@ var ladrillo=0;
 
 
 // declaracion de funciones//
-function comprar(elemento, cantidad){
+function comprar(elemento, cantidad ){
     return elemento + cantidad;
 }
 
@@ -44,5 +44,24 @@ piedra = usar(piedra, 480);
 
 mostrarStock();
 
+var arreglooo = [1,4,5,6,15];
 
+console.log(arreglooo);
+
+arreglooo[4] = 13
+
+console.log(arreglooo[4]);
+arreglooo[4]++ ;
+
+arreglooo.push(10);
+
+//[1,4,5,6,14,10]
+console.log(arreglooo);
+
+arreglooo.push(34);
+console.log(arreglooo);
+arreglooo.pop();
+console.log(arreglooo);
+arreglooo.splice(1,1)
+console.log(arreglooo);
 
