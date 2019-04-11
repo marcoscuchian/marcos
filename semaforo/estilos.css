@@ -31,15 +31,15 @@ body{
 
 }
 
-.rojo{
+.rojo.prendida{
     background: red;
 
 }
-.verde{
+.verde.prendida{
     background: green;    
 }
 
-.amarillo{
+.amarillo.prendida{
     background: yellow;
     
 }
