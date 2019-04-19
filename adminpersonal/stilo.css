@@ -1,0 +1,23 @@
+.principal {
+    margin: auto;
+    width: 900px;
+    border: 2px black solid;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;    
+    align-items: center; 
+}
+.tablap {
+    margin: 0;
+    width: 100%;
+    border: 1px solid black;
+    margin: 15px  0 0 0;
+}
+
+.tablap thead{
+    background: green;
+    color:whitesmoke;
+    
+
+}
+
