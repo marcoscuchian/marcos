@@ -1,11 +1,22 @@
 var listaPersonas = [];
 
+class Persona {
+    nombre;
+    dni;
+    fechaIngreso;
+
+    constructor(nombre,dni,fechaIngreso){
+        this.nombre = nombre;
+        this.dni = dni;
+        this.fechaIngreso = fechaIngreso;
+    }
+}
+
 function agregarPersona(){
 
-    var nombre= document.querySelector("#txt_nombre").value; 
+    var nombre= $('#txt_nombre').val(); 
     var dni= document.querySelector("#txt_dni").value;
     var fecha= document.querySelector("#txt_fecha").value;
-
 
     if (nombre==""){
         alert("completa campo de nombre");
@@ -33,35 +44,30 @@ function agregarPersona(){
     actualizarListado();
 }
 
-
 function actualizarListado(){
     var tabla = document.querySelector(".tablap tbody");
+
     
     tabla.innerHTML = '';
-
+    var fila = '';
     for (var i = 0; i < listaPersonas.length; i++) {
-        var fila =
+        fila +=
         '<tr>'+
-            '<td>Marcos</td>'+
-            '<td>39073762</td>'+
-            '<td>15/05/2015</td>'+
-            '<td>Borrar</td>'+
+            '<td>'+listaPersonas[i].nombre +'</td>'+
+            '<td>'+listaPersonas[i].dni+'</td>'+
+            '<td>'+listaPersonas[i].fechaIngreso+'</td>'+
+            '<td> <a onclick="borrar(' + i + ')" href="#" > borrar </a> </td>'+
         '</tr>';
+
     }
-    tabla.appendChild(fila);
+    tabla.innerHTML = fila;
 }
 
-class Persona {
-    nombre;
-    dni;
-    fechaIngreso;
-
-    constructor(nombre,dni,fechaIngreso){
-        this.nombre = nombre;
-        this.dni = dni;
-        this.fechaIngreso = fechaIngreso;
-    }
+function borrar(i){
+    listaPersonas.splice(i, 1);
+    actualizarListado();
 }
+
 
 
 
