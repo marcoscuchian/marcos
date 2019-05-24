@@ -1,0 +1,50 @@
+.navbar-brand img {
+    position: absolute;
+    top: 11px;
+}
+.secciones {
+    width: 100%;
+    padding: 30px;
+
+}
+#principal {
+    padding: 0;
+}
+.fecha-evento {
+    background-image: linear-gradient(to top right, rgba(0,0,0, 0.2), rgba(255,255,255,0.2));
+    background-color: gray;
+    width: 100%;
+    height: 160px;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fecha-evento .dia{
+    font-size: 70px;
+    margin: 0;
+}
+.fecha-evento .mes{
+    font-size: 24px;
+    margin: 0;
+}
+
+.violeta {
+    background-color: purple;
+}
+
+.card-evento {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.192);
+    border: none;
+    
+}
+.card-evento .btn{
+    border-radius: 18px;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+}
