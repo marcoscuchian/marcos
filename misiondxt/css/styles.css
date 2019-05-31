@@ -48,3 +48,26 @@
     left: 50%;
     transform: translateX(-50%);
 }
+.videos {
+    width: 100%;
+    min-height: 220px;
+
+}
+.sponsor {
+    display: flex;
+    flex: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sponsor img{
+    width: 150px;
+}
+
+footer .list-group li a,
+footer .list-group li,
+footer h4{ 
+    color: white;
+
+}
+
