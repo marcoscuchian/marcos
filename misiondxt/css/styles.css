@@ -49,8 +49,7 @@
     transform: translateX(-50%);
 }
 .videos {
-    width: 100%;
-    min-height: 220px;
+    
 
 }
 .sponsor {
@@ -89,4 +88,25 @@ footer h4{
 
 .desplegable-menu{
     border: none;
+}
+
+
+.marcelo iframe {
+    
+   height: 200px;
+   width: 300px;
+
+}
+.marcelo img
+
+
+.nosotros {
+    background: rgba(139, 123, 123, 0.445);
+}
+.video-flotante {
+    
+     position: absolute;
+     border: 4px solid white;
+    bottom: -30%;
+    left: -10%;
 }
