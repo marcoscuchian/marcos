@@ -71,3 +71,22 @@ footer h4{
 
 }
 
+
+.redes a i {
+    font-size: 30px;
+    margin: 10px;
+    text-shadow:0 0 90px white;
+}
+
+
+.desplegable-menu a:hover {
+    background: rgba(0, 0, 0, 0.596);
+    color: white;
+    
+    
+    
+}
+
+.desplegable-menu{
+    border: none;
+}
