@@ -8,7 +8,7 @@
     <title>Document</title>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
+  
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -51,7 +51,7 @@
                     <div class="dropdown-menu desplegable-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Videos</a>
                         <a class="dropdown-item" href="#">Fotos</a>
-                       
+
                     </div>
                 </li>
             </ul>
@@ -59,36 +59,36 @@
     </nav>
 
     <!-- Section fotos principal-->
-    <section id="principal" class="secciones mt-5 ">
+    <section id="principal" class="secciones mt-5 bg-dark ">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="bd-example">
-                        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+                        <div id="carouselExampleCaptions" class="carousel slide carousel-fade fs-background" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                                 <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                                 <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
                             </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="https://via.placeholder.com/1920x1080" class="d-block w-100" alt="...">
+                            <div class="carousel-inner" data-interval="4000" >
+                                <div class="carousel-item active ">
+                                    <img src="img/maraton2.jpg" class="d-block w-100" alt="...">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>First slide label</h5>
                                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <img src="https://via.placeholder.com/1920x1080" class="d-block w-100" alt="...">
+                                <div class="carousel-item" data-interval="4000" >
+                                    <img src="img/maraton1.jpg" class="d-block w-100" alt="...">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Second slide label</h5>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <img src="https://via.placeholder.com/1920x1080" class="d-block w-100" alt="...">
+                                <div class="carousel-item" data-interval="4000" >
+                                    <img src="img/maraton3.jpg" class="d-block w-100" alt="...">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Third slide label</h5>
+                                        <h5>¡ACORDONARSE!</h5>
                                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                                     </div>
                                 </div>
@@ -103,13 +103,35 @@
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
+                        
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
+    </section>
+    <!-- Reloj -->
+    <section class="contenedor-reloj">
+        <div class="container p-5">
+            <div class="d-flex justify-content-center mt-5">
+                <h1 class="titulo-reloj">Solo Faltan...</h1>
+            </div>
+            <div class="d-flex justify-content-center">
+                <h1 class="reloj"> 
+                    <span id="horas"></span> :
+                    <span id="minutos"></span> :
+                    <span id="segundos"></span>
+                </h1>
+            </div>
+            <div class="d-flex justify-content-center">
+                <h1 class="titulo-reloj">Para los 42K de Carlos Paz </h1>
+            </div>
+            <div class="d-flex justify-content-center mb-5">
+                <button class="btn  btn-lg boton-vamos">
+                    ¡QUIERO UNIRME!
+                </button>
+            </div>
+        </div>
     </section>
     <!-- Poximos eventos-->
     <section class="secciones" id="eventos">
@@ -131,6 +153,36 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-12 col-md-4">
+
+                        <div class="card card-evento" style="width: 18rem;">
+                            <div class="fecha-evento violeta">
+                                <h4 class="dia">02</h4>
+                                <h6 class="mes">Agosto</h6>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-warning ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+
+                            <div class="card card-evento" style="width: 18rem;">
+                                <div class="fecha-evento violeta">
+                                    <h4 class="dia">02</h4>
+                                    <h6 class="mes">Agosto</h6>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                        of the card's content.</p>
+                                    <a href="#" class="btn btn-warning ">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
 
             </div>
         </div>
@@ -172,16 +224,16 @@
     </section>
     <!-- imagenes de sponsors-->
     <section class="bg-secondary py-3">
-            <div class="container ">
-                    <div class="row">
-                      <div class="col-sm sponsor">
-                        <img src="img/prevencion.png" alt="">
-                        <img src="img/powerade.jpg" alt="">
-                        <img src="img/bonaqua-logo.png" alt="">
-                        <img src="img/Jeep_logo.svg.png" alt="">
-                    </div>
-                    </div>
-                  </div>
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm sponsor">
+                    <img src="img/prevencion.png" alt="">
+                    <img src="img/powerade.jpg" alt="">
+                    <img src="img/bonaqua-logo.png" alt="">
+                    <img src="img/Jeep_logo.svg.png" alt="">
+                </div>
+            </div>
+        </div>
 
     </section>
     <footer class="bg-dark py-5">
@@ -199,24 +251,25 @@
                         <li class="list-group-item bg-dark"><a href="">Videos</a></li>
                     </ul>
                 </div>
-             
+
                 <div class="col-sm">
-                    <h4>    Inscripción y Acreditaciones </h4>
-                        <ul class="list-group list-group-flush bg-dark">
-                           
-                            <li class="list-group-item bg-dark">Soledad Garbini: (0351) 152 143153</li>
-                            <li class="list-group-item bg-dark">
-                                <a href="emailto:misiondxt@gmail.com">misiondxt@gmail.com</a></li>
-                            <li class="list-group-item bg-dark redes">
-                                <a href=""><i class="fab fa-facebook "></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
-                                <a href=""><i class="fab fa-google-plus-g"></i></a>
-                            </li>
-                        </ul>
-                    </div>
+                    <h4> Inscripción y Acreditaciones </h4>
+                    <ul class="list-group list-group-flush bg-dark">
+
+                        <li class="list-group-item bg-dark">Soledad Garbini: (0351) 152 143153</li>
+                        <li class="list-group-item bg-dark">
+                            <a href="emailto:misiondxt@gmail.com">misiondxt@gmail.com</a></li>
+                        <li class="list-group-item bg-dark redes">
+                            <a href=""><i class="fab fa-facebook "></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-google-plus-g"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

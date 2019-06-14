@@ -106,7 +106,27 @@ footer h4{
 .video-flotante {
     
      position: absolute;
-     border: 4px solid white;
-    bottom: -30%;
-    left: -10%;
+     border: 2px solid white;
+    bottom: -15%;
+    left: -8%;
+}
+
+.contenedor-reloj {
+  background:   linear-gradient(to bottom right, #fc4a1a, #f7b733), url(../img/fondo1.jpg) no-repeat 0 10%; 
+  color: white;
+  background-blend-mode: multiply;
+
+}
+.titulo-reloj {
+
+    font-size: 3em;
+}
+
+.reloj {
+    font-size: 7em;
+}
+
+.boton-vamos {
+    background: purple;
+    color: white;
 }
