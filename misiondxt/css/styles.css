@@ -1,3 +1,19 @@
+html, body {
+    width: 100vw;
+    
+}
+
+section {
+    overflow-x: auto;
+}
+
+
+nav.navbar {
+
+    border-bottom: 3px solid #ff8a00;
+    
+}
+
 .navbar-brand img {
     position: absolute;
     top: 11px;
@@ -79,7 +95,7 @@ footer h4{
 
 
 .desplegable-menu a:hover {
-    background: rgba(0, 0, 0, 0.596);
+    background: #ff8a00;
     color: white;
     
     
@@ -129,4 +145,8 @@ footer h4{
 .boton-vamos {
     background: purple;
     color: white;
+}
+.nav-item.active a {
+  color: #ff8a00 !important;
+
 }
