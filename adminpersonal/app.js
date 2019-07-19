@@ -10,6 +10,7 @@ class Persona {
         this.dni = dni;
         this.fechaIngreso = fechaIngreso;
     }
+    
 }
 
 function agregarPersona(){
@@ -31,7 +32,6 @@ function agregarPersona(){
         alert("completa campo de fecha");
         return false;
     }
-    
 
     var persona =new Persona(nombre,dni,fecha);
 
